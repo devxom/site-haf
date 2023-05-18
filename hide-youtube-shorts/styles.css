@@ -10,7 +10,7 @@
 @updateURL      https://raw.githubusercontent.com/devxom/site-haf/main/hide-youtube-shorts/styles.css
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-    a[title = "Shorts"] {
+    a[title="Shorts"] {
         display: none !important;
     }
 
@@ -18,7 +18,15 @@
         display: none !important;
     }
 
-    ytd-grid-video-renderer:has(a[href ^= "/shorts"]) {
+    ytd-grid-video-renderer:has(a[href^="/shorts"]) {
+        display: none !important;
+    }
+
+    ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts]) {
+        display: none !important;
+    }
+
+    ytd-reel-shelf-renderer {
         display: none !important;
     }
 }

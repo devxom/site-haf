@@ -8,3 +8,4 @@
 **Changelog:**
 
 - Add Hide Youtube Shorts (with fix on 2023.05+)
+- Add filter for short on home page and author page
