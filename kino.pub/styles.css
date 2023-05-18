@@ -1,0 +1,16 @@
+/* ==UserStyle==
+@name           Kino.pub tweaks
+@author         devxom (https://github.com/devxom)
+@license        MIT
+@version        1.0.0
+@namespace      https://userstyles.world/user/usual_text4053
+@supportURL     https://github.com/devxom/site-haf/issues
+@homepageURL    https://github.com/devxom/site-haf/blob/main/kino.pub/README.md
+@updateURL      https://raw.githubusercontent.com/devxom/site-haf/main/kino.pub/styles.css
+==/UserStyle== */
+@-moz-document domain(kino.pub) {
+  .owl-carousel owl-item {
+    width: 480px;
+    height: 270px;
+  }
+}
