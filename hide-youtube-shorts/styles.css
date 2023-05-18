@@ -1,0 +1,24 @@
+/* ==UserStyle==
+@name           YouTube - Hide Shorts
+@description    Removing Shorts from YouTube sidebar and subscription page
+@author         devxom (https://github.com/devxom)
+@license        MIT
+@version        1.0.0
+@namespace      https://userstyles.world/user/usual_text4053
+@supportURL     https://github.com/devxom/site-haf/issues
+@homepageURL    https://github.com/devxom/site-haf/blob/main/hide-youtube-shorts/README.md
+@updateURL      https://raw.githubusercontent.com/devxom/site-haf/main/hide-youtube-shorts/styles.css
+==/UserStyle== */
+@-moz-document domain("youtube.com") {
+    a[title = "Shorts"] {
+        display: none !important;
+    }
+
+    ytd-grid-video-renderer[is-shorts] {
+        display: none !important;
+    }
+
+    ytd-grid-video-renderer:has(a[href ^= "/shorts"]) {
+        display: none !important;
+    }
+}
